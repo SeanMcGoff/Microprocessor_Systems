@@ -52,7 +52,7 @@ if [ -d "$DIRECTORY" ]; then
     --symbols="build/main.bin" \
     -ex "set architecture armv5te" \
     -ex "target remote localhost:$PORT" \
-    -ex "load build/main.bin" \
+    -ex "load build/main.bin" 
 
     kill -2 $qemu_pid
 else
